@@ -1,8 +1,11 @@
+import { Container } from "../../components/Container";
+import { Header } from "../../components/Header";
+
 export const App = () => {
   return (
-    <div>
-      <h1 className="font-bold text-3xl text-red-500">Hello World</h1>
-    </div>
+   <Container>
+    <Header/>
+   </Container>
   );
 };
 
