@@ -89,12 +89,12 @@ const buttons: {
 export const ButtonsScreen = () => {
     return (
         <section className="grid text-base w-80 bg-[#1A1A1A] grid-cols-4 p-6 h-96 rounded-b-3xl">
-            {buttons.map((button, name) => (
+            {buttons.map((button, name, onClick) => (
                 <Button
                     name={button.name}
                     type={button.type}
                     key={name}
-                    onClick={() => console.log(button.name)}
+                    onClick={() => onClick}
                 />
             ))}
         </section>
